@@ -12,7 +12,7 @@
 
 * Install [Google Cloud SDK](https://cloud.google.com/sdk/)
   * Move the SDK somewhere sensible (and make sure your user is the owner of its parent folder). e.g. your home folder `~/google-cloud-sdk`
-  * Run the `install.sh` script to add the `gcloud` command to your PATH
+  * Run the `install.sh` script from the Google Cloud SDK folder to add the `gcloud` command to your PATH
 * Run `gcloud components install kubectl` to install the Kubernetes CLI
 * Run `gcloud init` to login to your Google Cloud Platform account. If it asks you to configure the Google Compute Engine, you don't need to do this.
 * Open the Google Cloud Console, navigate to your cluster in the Container Engine, click the checkbox and then the 'Connect' button that appears. This should then prompt you with a command to configure kubectl with your cluster. (It should look something like `gcloud container clusters get-credentials cluster-1 \

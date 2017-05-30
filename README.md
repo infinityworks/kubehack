@@ -6,7 +6,7 @@
   * NB: You will need to enter payment details, though new accounts are given $300 credits on the platform for the next 12 months and it will not charge after this period (according to Google). However, we recommend that you take precautions and destroy your cluster after you are finished.
 * Navigate to the Google Container Engine dashboard in the Products & services navigation pane on the left hand side.
 * Click the 'Create Cluster' button to open the cluster creation wizard.
-  * Don't worry about most of the fields on this form, just give it a name and click 'Create'.
+  * Don't worry about most of the fields on this form, just give it a name and set the amount of nodes to 5 or less(6+ starts to charge you) and click 'Create'.
 
 ## Local Setup
 

@@ -13,4 +13,4 @@
 * `gcloud init`
 * Open the Google Cloud Console, navigate to your cluster in the Container Engine, click the checkbox and then the 'Connect' button that appears. This should then prompt you with a command to configure kubectl with your cluster. (It should look something like `gcloud container clusters get-credentials cluster-1 \
     --zone europe-west1-c --project <project_id>`)
-* Run `kubectl proxy`, then navigate to [](http://127.0.0.1:8001/ui) to see the Kubernetes dashboard.
+* Run `kubectl proxy`, then navigate to http://127.0.0.1:8001/ui to see the Kubernetes dashboard.

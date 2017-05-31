@@ -18,3 +18,19 @@
 * Open the Google Cloud Console, navigate to your cluster in the Container Engine, click the checkbox and then the 'Connect' button that appears. This should then prompt you with a command to configure kubectl with your cluster. (It should look something like `gcloud container clusters get-credentials cluster-1 \
     --zone europe-west1-c --project <project_id>`)
 * Run `kubectl proxy`, then navigate to http://127.0.0.1:8001/ui to see the Kubernetes dashboard.
+
+## The Application
+
+So you've setup your lovely cluster and you're happy that it's stable. Unfortunately for you, you've just been informed that some pesky developers have built an application that they're confident is in full working order and ready for deployment. Your manager has assigned the task of doing so to you, and he wants you to use your lovely new Kubernetes cluster. It's a simple chat application called Kubechat where like-minded individuals can get together online to discuss their favourite topics like trainspotting or watching Scrap Heap Challenge reruns on Dave.
+
+### V1
+
+* image: `infinityworks/kubechat:v1`
+
+In proper agile fashion, this is the barebones application with nothing in it, so we can test that our deployment works correctly.
+
+### V2
+
+* image: `infinityworks/kubechat:v2`
+
+We have some socket.io stuff going on here to have real-time chat between the server and client now. It only works for localhost and how do we make it stateless?

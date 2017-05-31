@@ -1,5 +1,8 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/version', function (req, res) {
   res.setHeader('Content-Type', 'application/json');
@@ -7,9 +10,14 @@ app.get('/version', function (req, res) {
 })
 
 app.get('/', function (req, res) {
-  res.send('<h1>Welcome to Kubechat</h1>');
+  res.sendFile(path.join(__dirname + '/public/index.html'));
 })
 
-app.listen(80, function () {
-  console.log('Example app listening on port 80!')
-})
+var io = require('socket.io').listen(app.listen(80));
+
+io.sockets.on('connection', function(socket) {
+  socket.emit('message', { message: 'Welcome to kubechat' });
+  socket.on('send', function(data) {
+    io.sockets.emit('message', data);
+  });
+});

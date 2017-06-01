@@ -1,45 +1,6 @@
-# Next Steps
+# Monitoring
 
-Deploying packaged applications to Kubernetes
-
-## Helm
-
-* Application packaging for Kubernetes
-    * https://github.com/kubernetes/helm
-    * https://github.com/helm
-
-### charts
-
-* An application packaged for Kubernetes
-    * https://github.com/kubernetes/charts
-
-### tiller
-
-* Cluster service for managing deployed charts
-
-### helm cli
-
-* Local tool to interact with `tiller`
-
-### monocular
-
-* UI for listing available charts
-    * https://kubeapps.com/
-* Can be hosted on the cluster
-    * https://github.com/helm/monocular
-
-## Example
-
-### Setup
-
-* Install `helm` locally
-    * https://github.com/kubernetes/helm/blob/master/docs/install.md
-* Install tiller on the cluster
-    * `helm init`
-* Wait for `tiller` to deploy on the cluster
-    * `kubectl get pods --all-namespaces -w`
-
-### Deploying Prometheus
+## Deploying Prometheus
 
 * Install Prometheus
     * `helm install --name hack-night-prometheus --set alertmanager.enabled=false stable/prometheus`
@@ -51,7 +12,7 @@ Deploying packaged applications to Kubernetes
 * Removing Prometheus
     * `helm delete --purge hack-night-prometheus`
 
-### Deploying Grafana
+## Deploying Grafana
 
 * Install Grafana
     * `helm install --name hack-night-grafana stable/grafana`
@@ -65,7 +26,7 @@ Deploying packaged applications to Kubernetes
 * Removing Grafana
     * `helm delete --purge hack-night-grafana`
 
-### Linking the two
+## Linking the two
 
 * Listing the available services
     * Kubernetes UI > Services and discovery > Services

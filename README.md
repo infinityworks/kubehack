@@ -46,7 +46,6 @@ You can watch your pods going up and down with the following command:
 Some ideas on things to look at next:
 
 * [Helm/Package Management](next_steps/helm.md)
-* [Databases](next_steps/databases.md)
 * [Monitoring](next_steps/monitoring.md)
 
 ## Resources

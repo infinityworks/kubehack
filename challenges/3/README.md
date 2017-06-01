@@ -82,6 +82,16 @@ nginx-service   10.3.241.102   104.199.19.249    80:31533/TCP   1h
 todo-service    10.3.242.51    104.155.109.212   80:32166/TCP   10m
 ```
 
+## From YAML
+
+To create the resources:
+
+* `kubectl apply -f ./googlecloud_ssd.yml`
+* `kubectl apply -f ./mongo_statefulsets.yml`
+* `kubectl create -f ./todo_app_deployment.yml`
+* `kubectl create -f ./todo_app_service.yml`
+* `kubectl apply -f ./todo_app_ingress.yml`
+
 # Credits
 
 * [MongoDB setup](http://blog.kubernetes.io/2017/01/running-mongodb-on-kubernetes-with-statefulsets.html)

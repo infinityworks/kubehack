@@ -25,13 +25,38 @@ So you've setup your lovely cluster and you're happy that it's stable. Unfortuna
 
 Your manager has assigned the task of doing so to you, and he wants you to use your lovely new Kubernetes cluster. It's a simple chat application called Kubechat where like-minded individuals can get together online to discuss their favourite topics like trainspotting or watching Scrap Heap Challenge reruns on Dave.
 
+You can watch your pods going up and down with the following command:
+`kubectl get pods -w --all-namespaces`
+
 ### Challenge 1
 
-Let's get nginx running and exposed.
+Let's get a pod running.
+
+`kubectl run nginx --image=nginx --port=80`
+
+You should be able to run `kubectl get pods` now and see your new nginx container running on the cluster.
+
+
+
+### Challenge 2
+
+
 
 ## Useful stuff
 
 * [Kubernetes by Example](http://kubernetesbyexample.com/)
 * [kubectl cheatsheet](https://kubernetes.io/docs/user-guide/kubectl-cheatsheet/)
-* [Resources](RESOURCES.md)
+
+## Next Steps
+
+Some ideas on things to look at next:
+
 * [Next Steps](NEXTSTEPS.md)
+
+## Resources
+
+* [Tools](resources/tools.md)
+* [Tutorials](resources/tutorials.md)
+* [Platforms](resources/platforms.md)
+* [Community](resources/community.md)
+* [Monitoring](resources/monitoring.md)

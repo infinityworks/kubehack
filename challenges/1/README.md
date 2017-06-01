@@ -31,6 +31,8 @@ nginx-3449338310-q94dj   1/1       Running   0          41s
 nginx-3449338310-qh4b9   1/1       Running   0          9m
 ```
 
+Now you've done that, check out [Challenge 2](../2) to see how to expose Nginx and access it in your browser
+
 ## From YAML
 
 To create the deployment:

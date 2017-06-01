@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: todo-app
+  name: todo-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: todo-app
+  template:
+    metadata:
+      labels:
+        run: todo-app
+    spec:
+      containers:
+      - image: infinityworks/todo-app
+        imagePullPolicy: Always
+        name: todo-app
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always

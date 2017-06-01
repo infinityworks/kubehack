@@ -38,6 +38,7 @@ You can watch your pods going up and down with the following command:
 
 * [Challenge 1](challenges/1/README.md)
 * [Challenge 2](challenges/2/README.md)
+* [Challenge 3](challenges/3/README.md)
 
 
 ## Next Steps

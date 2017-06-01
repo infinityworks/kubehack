@@ -1,6 +1,6 @@
 # This is a deployment object spec for nginx with a replicaset of 1
 
-apiVersion: v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:

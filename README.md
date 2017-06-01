@@ -25,14 +25,13 @@ So you've setup your lovely cluster and you're happy that it's stable. Unfortuna
 
 Your manager has assigned the task of doing so to you, and he wants you to use your lovely new Kubernetes cluster. It's a simple chat application called Kubechat where like-minded individuals can get together online to discuss their favourite topics like trainspotting or watching Scrap Heap Challenge reruns on Dave.
 
-### V1
+### Challenge 1
 
-* image: `infinityworks/kubechat:v1`
+Let's get nginx running and exposed.
 
-In proper agile fashion, this is the barebones application with nothing in it, so we can test that our deployment works correctly.
+## Useful stuff
 
-### V2
-
-* image: `infinityworks/kubechat:v2`
-
-We have some socket.io stuff going on here to have real-time chat between the server and client now. It only works for localhost and how do we make it stateless?
+* [Kubernetes by Example](http://kubernetesbyexample.com/)
+* [kubectl cheatsheet](https://kubernetes.io/docs/user-guide/kubectl-cheatsheet/)
+* [Resources](RESOURCES.md)
+* [Next Steps](NEXTSTEPS.md)
